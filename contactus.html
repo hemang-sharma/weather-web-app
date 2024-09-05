@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('contact.jpg');
+            z-index:-1;
+        }
+
+        .container {
+            width: 400px; 
+            padding: 20px;
+            opacity:1;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color:rgb(88, 102, 114);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #305a65;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <form onsubmit="href='window.location.thanks.html'; return false;">
+            <label for="fname" style="color:rgb(47, 83, 119);font-weight:bold">First Name</label>
+            <input type="text" id="fname" name="firstname" style="color:rgb(118, 137, 158);font-weight:bold" placeholder="Your name.."><br/>
+
+            <label for="lname" style="color:rgb(47, 83, 119);font-weight:bold">Last Name</label>
+            <input type="text" id="lname" name="lastname" style="color:rgb(118, 137, 158);font-weight:bold" placeholder="Your last name.."><br/>
+
+            <label for="country" style="color:rgb(47, 83, 119);font-weight:bold">Country</label>
+            <select id="country" name="country" style="color:rgb(79, 117, 155);font-weight:bold">
+                <option value="India" >India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="China">China</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Germany">Germany</option>
+            </select><br/>
+
+            <label for="subject" style="color:rgb(47, 83, 119);font-weight:bold">Subject</label><br/>
+            <textarea id="subject" name="subject" style="color:rgb(118, 137, 158);font-weight:bold" placeholder="Write something.."></textarea><br/>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
